@@ -5,13 +5,14 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+
         <div class="header">
             <h3>Dankuy</h3>
             <a href="">Home</a>
             <a href="">About</a>
             <a href="">Services</a>
-            <a href="">Pages</a>
-            <a href="">Contact</a>
+            <a href="">Login</a>
+            <a href="">Register</a>
             <img src="icon.jpg"/>
         </div>
     
@@ -28,35 +29,35 @@
     <div class="input">    
      <div>
         
-        <input type="text" placeholder="Name">
+        <input class="name" type="text" placeholder="Name">
     
     
     
-        <input type="number" placeholder="Phone">
+        <input class="phone" type="number" placeholder="Phone">
     
     
     
-        <input type="Email" placeholder="Email">
+        <input class="email" type="Email" placeholder="Email">
     
     
      </div>
 
      <div>
         
-            <input type="number" placeholder="number">
+            <input class="seat_number" type="number" placeholder="number">
         
         
         
-            <input type="date" placeholder="date">
+            <input class="date" type="date" placeholder="date">
         
     </div>  
         
     </div>
 
     <div class="bottom">
-            <textarea>Message</textarea>
+            <textarea class="message">Message</textarea>
     
-        <button type="Book Table">Book Table</button>
+        <button onclick="booknow()" type="Book Table">Book Table</button>
     </div>
 
     <div class="mid">
@@ -79,6 +80,12 @@
             <p>hello@danky.com</p>
             <button type="Book Now">Book Now</button>
         </div>
+    </div>
+
+    <button class="fetch_data" onclick="fetchData()">Fetch Data</button>
+
+    <div class="posts" style="color: white;">
+
     </div>
 
     <div class="info">
@@ -132,6 +139,20 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.143661862494!2d36.79271155!3d-1.3034532499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10971278816f%3A0xedb9a8aec31f2f48!2sAshaki%20Grill%20-%20Kindaruma%20Rd!5e0!3m2!1sen!2ske!4v1708673766816!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
+    
+    <div class="modal"> 
+        <div class="holder">
+            <button onclick="closeModal()">Close</button>
+            <p class="moda_info">
+            </p>
+        </div>    
+    </div>
+    
 
+    <script>
+        
+    </script>
+    <script src="/index.js"></script>
     </body>
+   
 </html>

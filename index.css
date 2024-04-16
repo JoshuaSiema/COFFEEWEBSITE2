@@ -4,6 +4,7 @@ body{
     margin: 0;
     background-repeat: no-repeat;
     background-color: rgb(1, 0, 0);
+    position: relative;
 }
 .header{
     display: flex;
@@ -63,6 +64,7 @@ h1{
     margin-right: 10%;
     flex-direction: row;
     gap: 5px;
+    transition: .5 ease-in-out;
 }
 .bottom{
     display: flex;
@@ -84,7 +86,8 @@ h1{
     width: 95%;
     background-color: black;
     color: #fff;
-    border: 2px solid whitesmoke;
+    transition: all .5s ease-in-out;
+    outline: none;
     border-radius: 5px;
     padding-left: 10px;
 }
@@ -147,4 +150,44 @@ h1{
     height: 200px;
     width: 200px;
 
+}
+.modal{
+    width: 100vw;
+    display: none;
+    position: fixed;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    top: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.shown{
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
+.modal .holder{
+    height: 300px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+input{
+    
+    border-color: aqua;
+}
+
+input:focus{
+    border-style: dotted;
+    border-color: coral;
+
+}
+
+.fetch_data{
+    width: 300px;
 }
